@@ -1,0 +1,97 @@
+@charset "UTF-8";
+
+/* reset */
+* {margin: 0; padding: 0;}
+li {list-style: none;}
+a {text-decoration: none; color: white;}
+img {display: block;}
+/* html, body {height: 100%;} */
+
+.centerbox {width: 1300px; height: 100%; margin: 0 auto;}
+
+header {background: #3E4347; position: fixed; top: 0; left: 0; 
+width: 100%; z-index: 1000;}
+header .centerbox {display: flex; justify-content: space-between; 
+align-items: center;}
+
+header h1 {}
+
+header .gnb {display: flex; gap: 140px;}
+header .gnb li {font-size: 19px;}
+header .gnb li a {padding: 20px 0px; display: block;}
+
+
+#visual {width: 100%; height: 100vh; background:url('../images/image\ 472.png') center top; 
+background-size: cover;}
+
+#visual .centerbox {position: relative;}
+#visual .centerbox .textbox {text-align: center; position: absolute; 
+width: 100%; top: 305px; 
+left: 50px; animation: textBox 3s forwards;opacity: 0;}
+
+@keyframes textBox {
+    0% {left: 300px; opacity: 0;}
+    100% {left: -50px; opacity: 1;}
+}
+
+#visual .centerbox .textbox strong {display: block; font-size: 80px; font-weight: 
+normal; color: white; line-height: 1.2;}
+#visual .centerbox .textbox em {display: block; font-size: 40px; font-style: 
+normal; color: white;}
+
+#section_box section {padding: 100px 0;}
+
+#section_box #section1 {background: #FFF; padding-bottom: 100px; width: 100%;}
+
+#section_box .title_box {margin-bottom: 100px; text-align: center;}
+#section_box .title_box h2 {color: #3E4347; font-size: 100px; margin-bottom: 10px;}
+#section_box .title_box p {color: #3E4347; font-size: 40px; height: 1em;}
+
+#section_box .content_box {text-align: center;}
+
+#section1 .content {margin-top: 70px;}
+
+#section1 .content .image_box {display: flex; justify-content: center;
+gap: 80px; margin-top: 50px;} 
+
+.content-box {display: flex; justify-content: center; flex-wrap: wrap; gap: 50px; margin-top: 20px;}
+.item {width: 400px; /* 기존 300px보다 크게 */ text-align: left;}
+.item img {width: 100%; height: auto; max-width: none; /* 꼭 추가하세요! */ }
+.tit {font-size: 20px; font-weight: bold; margin-top: 10px;}
+.item p {font-size: 16px; margin-top: 5px; color: #444;}
+
+
+.image_box {display: flex; width: 100%; flex-wrap: wrap; justify-content: center; gap: 20px;}
+.image_box img {width: 380px; max-width: 100%; height: auto; object-fit: cover; margin-top: 20px; gap: 10px; margin-bottom: 30px;}
+.image_box desc {width: 400px; height: auto; margin-top: 50px; font-size: 25px;}
+
+.image_box2 {display: flex; justify-content: center; gap: 80px; margin-top: 40px; margin-bottom: 50px;}
+.image_box2 img {width: 610px; height: auto;}
+
+.golf-section {text-align: center; padding: 60px 20px;}
+.golf-section h2 {font-size: 100px; margin-bottom: 0;}
+.golf-section .subtitle {font-size: 40px; margin-top: 4px; margin-bottom: 30px;}
+.golf-section img {width: 100%; max-width: 20000px; height: auto; display: block; margin: 0 auto;}
+.golf-description {margin: 40px auto 0; text-align: left; line-height: 1.8; font-size: 20px; color: #222; margin-bottom: 15px;}
+
+.location-section {text-align: center; padding: 60px 20px;}
+.location-section h2 {font-size: 100px; margin-bottom: 0;}
+.location-section .subtitle {font-size: 40px; margin-top: 4px; margin-bottom: 30px;}
+.location-section img {max-width: 1250px; height: auto; display: block; margin: 0 auto 40px; border-radius: 10px;}
+
+.directions {margin: 0 auto; text-align: left; line-height: 1.7; font-size: 16px; color: #333;}
+.directions h3 {font-size: 30px; margin-bottom: 10px; color: #000;}
+
+.public-transport-section {text-align: left; margin: 60px auto; font-size: 16px; line-height: 1.8; color: #333; text-align: left;}
+.public-transport-section h3 {font-size: 16px; margin-bottom: 15px; color: #000;}
+.public-transport-section ul {text-align: left;}
+.public-transport-section li {margin-bottom: 10px;}
+.public-transport-section ol {padding-left: 20px; list-style-type: decimal;}
+
+.site-footer {background-color: #3b3e42; color: #ffffff; padding: 30px 40px; font-size: 10px;}
+.footer-links {margin-top: 20px;}
+.footer-links span {font-weight: bold; margin-right: 10px;}
+.footer-links a {color: #ffffff; margin-right: 10px; text-decoration: none;}
+.footer-links a:hover {}
+.footer-info p {margin: 0px 0;}
+body {margin: 0; padding: 0;}
